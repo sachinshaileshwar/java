@@ -1,0 +1,18 @@
+abstract class sounds {
+    public abstract void animalSound();
+    public void sleep(){
+        System.out.println("zzzzz");
+    }
+}
+class Lion extends sounds{
+    public void animalSound(){
+        System.out.println("Lion roars");
+    }
+}
+class Abstract{
+    public static void main(String[] args) {
+        sounds leo = new Lion();
+        leo.sleep();
+        leo.animalSound();
+    }
+}
